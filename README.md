@@ -1,6 +1,6 @@
 # PADO EthBeijing Demo
 
-PADO EthBeijing Demo can get balance from cex, proof balance greater than a base value using izk, and put izk proof to blockchain using [EAS](https://attest.sh/);
+PADO EthBeijing Demo can get balance from cex, proof balance greater than a base value using izk, and put izk proof to blockchain using [EAS](https://attest.sh/).
 
 ## Running
 

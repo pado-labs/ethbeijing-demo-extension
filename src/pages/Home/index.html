@@ -7,15 +7,26 @@
   </head>
 
   <body>
+    <label
+      id="labeladdr"
+      style="position: absolute; top: 0; right: 0; margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black;"
+    ></label>
+    <button
+    id="connectButton"
+    style="position: absolute; top: 0; right: 0; margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black;"
+    >
+    Connect MataMask
+    </button>
+    
     <div style="margin: auto; width: 50%; padding: 10px; text-align: center;">
-      <label for="password">API Key:</label>
+      <label for="password">Binance API Key:</label>
       <input
         type="password"
         name="password"
         id="password"
         style="width: 50%; margin: 20px;"
       /><br/>
-      <label for="password2">API Secret:</label>
+      <label for="password2">Binance API Secret:</label>
       <input
         type="password"
         name="password2"
@@ -23,13 +34,28 @@
         style="width: 50%; margin: 20px;"
       /> <br/>
       <button
-        id="button"
-        style="margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black;"
+        id="getexdata"
+        style="margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black; width: 112px; height: 39.5px;"
       >
-        Confrim
+        Get Ex Data
       </button>
       <div id="result" style="margin: 20px;"></div>
-    </div>
+      
+      <button
+        id="izk"
+        style="margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black; width: 112px; height: 39.5px;"
+      >
+        izk
+      </button>
+      <div id="izkresult" style="margin: 20px;"></div>
 
+      <button
+        id="attest"
+        style="margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black; width: 112px; height: 39.5px;"
+      >
+        delegate attest
+      </button>
+      <div id="attestresult" style="margin: 20px;"></div>
+    </div>
   </body>
 </html>

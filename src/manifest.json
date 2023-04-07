@@ -16,6 +16,8 @@
     "storage"
   ],
   "host_permissions": [
-    "https://api.binance.com/"
+    "https://api.binance.com/",
+    "http://192.168.31.105/",
+    "http://192.168.31.105:8000"
   ]
 }

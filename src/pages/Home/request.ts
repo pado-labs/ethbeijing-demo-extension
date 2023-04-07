@@ -22,11 +22,11 @@ const request = async(fetchParams: FetchParams) => {
   let requestConfig: any = {
       credentials: 'same-origin',
       method: method,
-      headers: {
+      /*headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
           ...config?.extraHeader
-      },
+      },*/
       mode: "cors", //  same-origin | no-cors（default）|cores;
       cache: config?.cache ?? "default" //  default | no-store | reload | no-cache | force-cache | only-if-cached 。
   }
@@ -38,8 +38,8 @@ const request = async(fetchParams: FetchParams) => {
   }
   try {
       const response = await fetch(url, requestConfig);
-      const responseJson = await response.json();
-      return responseJson
+      const responseText = await response.text();
+      return responseText
   } catch (error:any) {
       throw new Error(error)
   }

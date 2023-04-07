@@ -5,6 +5,7 @@ PADO EthBeijing Demo let any user get his balance inlcuding spot account (现货
 Note this is just a simple demo to introduce the use-case of IZK and attestations. Here are some details for better comprehension.
 1. Biance API key and API secret (READ-ONLY priviledge) are required for authentication and authorization purpose to retrieve the user data.
 2. The user client performs IZK execution with a verifier which is deployed as a local service. Once the ZK proving and verification completed, the verifier signs on the result (either positive or negtive). The client can send the result encoded as an EAS attestation to ethereum, including: the BOOL result, verifier's signature, and the base value. 
+3. This demo focuses on addressing the privacy issue of sharing user's web data to any web 3 applications. To address the authenticity issue, we shall use more complicated techniques like MPC-TLS to integrate with the data fetching and sharing. 
 
 The figure shows an overall architecture of our demo. 
 ![image](https://user-images.githubusercontent.com/17900089/230559026-b7c539f5-7d75-44b7-8b26-70728c84fbba.png)

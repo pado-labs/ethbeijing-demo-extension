@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PADOETHBJ</title>
-  </head>
 
-  <body>
-    <label
-      id="labeladdr"
-      style="position: absolute; top: 0; right: 0; margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black;"
-    ></label>
-    <button
-    id="connectButton"
-    style="position: absolute; top: 0; right: 0; margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black;"
-    >
-    Connect MataMask
-    </button>
-    
-    <div style="margin: auto; width: 50%; padding: 10px; text-align: center;">
-      <label for="password">Binance API Key:</label>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        style="width: 50%; margin: 20px;"
-      /><br/>
-      <label for="password2">Binance API Secret:</label>
-      <input
-        type="password"
-        name="password2"
-        id="password2"
-        style="width: 50%; margin: 20px;"
-      /> <br/>
-      <button
-        id="getexdata"
-        style="margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black; width: 112px; height: 39.5px;"
-      >
-        Get Ex Data
-      </button>
-      <div id="result" style="margin: 20px;"></div>
-      
-      <button
-        id="izk"
-        style="margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black; width: 112px; height: 39.5px;"
-      >
-        izk
-      </button>
-      <div id="izkresult" style="margin: 20px;"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PADOETHBJ</title>
+</head>
 
-      <button
-        id="attest"
-        style="margin: 20px; padding: 10px; border-radius: 10px; border: 2px solid black; width: 112px; height: 39.5px;"
-      >
-        delegate attest
+<body>
+  <div class="header">
+    <div class="logo"></div>
+    <div>
+      <label id="labeladdr"></label>
+      <button id="connectButton">
+        Connect MataMask
       </button>
-      <div id="attestresult" style="margin: 20px;"></div>
     </div>
-  </body>
+  </div>
+  <div class="content">
+    <div class="aside">
+    </div>
+    <div class="main">
+      <div class="formItem">
+        <label for="password">Binance API Key:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div class="formItem">
+        <label for="password2">Binance API Secret:</label>
+        <input type="password" name="password2" id="password2" />
+      </div>
+      <div class="btns">
+        <div class="btnItem">
+          <button id="getexdata">
+            Get Ex Data
+          </button>
+          <div id="result"></div>
+        </div>
+        <div class="btnItem">
+          <button id="izk"> izk </button>
+          <div id="izkresult"></div>
+        </div>
+        <div class="btnItem">
+          <button id="attest">
+            delegate attest
+          </button>
+          <div id="attestresult"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>

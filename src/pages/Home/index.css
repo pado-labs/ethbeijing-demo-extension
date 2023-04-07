@@ -12,7 +12,139 @@ code {
     monospace;
 }
 
+body {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(32px);
+}
 button {
-  width: 112px;
-  height: 39.5px;
+  border-radius: 12px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  cursor: pointer;
+  border: 2px solid #000000;
+  background-color: #fff;
+}
+button:hover {
+  border: 0;
+  background: #000;
+  color: #fff;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.header .logo {
+  width: 151.2px;
+  height: 42px;
+  background: url('../../assets/img/logoWithText.svg');
+  background-size: 100% 100%;
+}
+#labeladdr {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-align: right;
+}
+#connectButton {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #000000;
+  background-color: #fff;
+}
+#connectButton:hover,
+#connectButton:active {
+  border: 0;
+  background: #000;
+  color: #fff;
+}
+.content {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+@media (min-width: 1680px) {
+  .content {
+    gap: 200px;
+  }
+}
+@media (min-width: 1920px) {
+  .content {
+    gap: 250px;
+  }
+}
+.aside {
+  width: 751.5px;
+  height: 676.5px;
+  background: url('../../assets/img/illustration.svg') center center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.formItem > label {
+  width: 175px;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.formItem > input {
+  width: 450px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  border: 0;
+}
+#getexdata,
+#izk,
+#attest {
+  height: 45px;
+  border-radius: 9px;
+}
+
+#result,
+#izkresult,
+#attestresult {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#attestresult a {
+  color: #0066ff;
+}
+.btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.btnItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.btnItem button {
+  width: 100%;
 }

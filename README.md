@@ -22,4 +22,4 @@ The figure shows an overall architecture of our demo.
 IZK are a new type of ZKP system which requires a zk-prover and a zk-verifier to interactively communicate with each us, and complete the proving and verification process integrally. The major advantage of IZK protocols are:
 * better prover complexity, especially memory-efficiency
 * better performance on boolean circuits, and primitives like AES, SHA-256, which are very un-friendly to NIZKs like zk-SNARKs or zk-STARKs.
-
+Check this [repo](https://github.com/pado-labs/awesome-izk) to find more details about IZK and IZK schemes, 

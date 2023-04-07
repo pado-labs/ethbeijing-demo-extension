@@ -99,6 +99,7 @@ button:hover {
   align-items: center;
   gap: 20px;
   max-height: 676.5px;
+  margin-top: 45px;
   /* overflow: hidden; */
   /* overflow-y: auto; */
 }

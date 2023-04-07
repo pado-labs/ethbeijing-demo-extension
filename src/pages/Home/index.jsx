@@ -47,7 +47,7 @@ getexdataButton.addEventListener("click", async () => {
         return;
     }
     console.log(binance.totalAccountBalance);
-    result.innerHTML = "exchange balace: " + binance.totalAccountBalance;
+    result.innerHTML = "exchange balance: " + binance.totalAccountBalance;
 });
 
 const EASContractAddress = "0xC2679fBD37d54388Ce493F1DB75320D236e1815e"; // Sepolia v0.26
@@ -104,7 +104,9 @@ izkButton.addEventListener("click", async () => {
     }
     console.log("izkresponse=", izkresponse);
     const izkres = getQueryRes(izkresponse);
-    izkresult.innerHTML = "izk proof: " + izkres.signature;
+    const izkresstr = izkres.res?"true":"false";
+    //izkresult.innerHTML = "greaterThan100U: " + izkresstr + ", endorsement data: " + izkres.signature;
+    izkresult.innerHTML = `Endorsement: {Greater than 100U: ${izkresstr}, Verifier signature: ${izkres.signature}}`;
 });
 async function getHash(greater) {
     const network = await provider.getNetwork();
@@ -208,7 +210,7 @@ attestButton.addEventListener("click", async () => {
     const newAttestationUID = await tx.wait();
     console.log('newAttestationUID=', newAttestationUID);
     const eascanurl = 'https://sepolia.easscan.org/attestation/view/' + newAttestationUID;
-    attestresult.innerHTML = `EAS Scan link: <a target="_blank" href="${eascanurl}"> ${eascanurl}</a>`;
+    attestresult.innerHTML = `EAS Scan Link: <a target="_blank" href="${eascanurl}"> ${eascanurl}</a>`;
 });
 function getQueryRes(variable) {
     const params = {};
